@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Activity, Twitter, Linkedin, Github, MessageCircle } from 'lucide-react';
+import { Activity, Twitter, Linkedin, Github } from 'lucide-react';
 
 const Footer: React.FC = () => {
   const scrollTo = (id: string) => {
@@ -20,10 +19,9 @@ const Footer: React.FC = () => {
   ];
 
   const socialLinks = [
-    { icon: <Twitter />, label: 'Twitter' },
-    { icon: <Linkedin />, label: 'LinkedIn' },
-    { icon: <Github />, label: 'GitHub' },
-    { icon: <MessageCircle />, label: 'Discord' },
+    { icon: <Twitter />, label: 'Twitter', href: 'https://x.com/md_sajjadullah?s=21' },
+    { icon: <Linkedin />, label: 'LinkedIn', href: 'https://linkedin.com/in/md-sajjad-ullah-1b1a0a213' },
+    { icon: <Github />, label: 'GitHub', href: 'https://github.com/MdSajjadUllah' },
   ];
 
   return (
@@ -40,7 +38,9 @@ const Footer: React.FC = () => {
               <div className="p-3 bg-indigo-600 rounded-2xl shadow-2xl shadow-indigo-500/20 group-hover:bg-indigo-500 transition-colors">
                 <Activity className="w-6 h-6 text-white" />
               </div>
-              <span className="text-2xl font-black tracking-tighter text-white uppercase">Insight<span className="text-indigo-500">AI</span></span>
+              <span className="text-2xl font-black tracking-tighter text-white uppercase">
+                Insight<span className="text-indigo-500">AI</span>
+              </span>
             </div>
             <p className="text-slate-500 text-sm font-medium max-w-xs leading-relaxed opacity-70">
               Automating the transition from fragmented datasets to enterprise-grade visual intelligence.
@@ -66,7 +66,9 @@ const Footer: React.FC = () => {
             {socialLinks.map((social, idx) => (
               <a 
                 key={idx}
-                href="#"
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-12 h-12 rounded-2xl glass border border-white/5 flex items-center justify-center text-slate-500 hover:text-white hover:border-indigo-500/40 transition-all group"
                 aria-label={social.label}
               >

@@ -75,7 +75,7 @@ const Contact: React.FC = () => {
                   <input 
                     required
                     type="email"
-                    placeholder="name@company.ai"
+                    placeholder="name@email.com"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     className="w-full px-6 py-5 bg-black border border-white/5 rounded-2xl focus:outline-none focus:ring-2 focus:ring-violet-500/20 focus:border-violet-500 transition-all text-white font-bold text-sm"

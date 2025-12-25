@@ -255,7 +255,7 @@ const Hero: React.FC<HeroProps> = ({ onDashboardCreated }) => {
         </h1>
 
         <p className="text-slate-400 text-base md:text-xl max-w-2xl mb-16 md:mb-24 font-medium leading-relaxed opacity-70">
-          Precision analytics, dynamic aggregation, and interactive drill-downs. Powered by Gemini 3.
+          Precision analytics, dynamic aggregation, and interactive drill-downs.
         </p>
 
         <div className="w-full max-w-4xl relative">
@@ -277,7 +277,7 @@ const Hero: React.FC<HeroProps> = ({ onDashboardCreated }) => {
                     <Upload className="w-12 h-12 md:w-20 md:h-20 text-indigo-400" />
                   </div>
                   <div className="space-y-3">
-                    <h3 className="text-white text-3xl md:text-5xl font-black tracking-tight uppercase">Ingest Dataset</h3>
+                    <h3 className="text-white text-3xl md:text-5xl font-black tracking-tight uppercase">Upload your data</h3>
                     <p className="text-slate-500 text-[11px] md:text-sm font-black uppercase tracking-[0.4em]">CSV, XLSX, JSON</p>
                   </div>
                 </div>
@@ -313,7 +313,7 @@ const Hero: React.FC<HeroProps> = ({ onDashboardCreated }) => {
               ) : (
                 <div className="flex items-center space-x-5">
                   <Sparkles className="w-8 h-8 md:w-10 md:h-10" />
-                  <span>Build Live BI</span>
+                  <span>Create Dashboard</span>
                   <ChevronRight className="w-8 h-8 opacity-30 group-hover:translate-x-3 transition-transform" />
                 </div>
               )}
